@@ -49,7 +49,7 @@ header {
 }
 #on {
   display: none;
-  color: #08fdd8; /* color of icon */
+  color: #ff7b00; /* color of icon */
 }
 
 .btns-container .fas {
@@ -112,18 +112,20 @@ header {
 }
 /* "Tonmoy" size and font adjustment */
 .logo span {
-  font-size: 1.7rem;
+  margin-top: 10px;
+  font-size: 2.5rem;
   color: #fff;
 }
 /* "Software Engineer" size and font adjustment */
 .logo-section > span {
-  margin-top: 25px;
-  font-size: 12px;
+  margin-top: 10px;
+  font-size: 18px;
   font-size: "Times New Roman", Times, serif;
 }
 
 /* Style for the navigation section */
 .nav-links a {
+  font-size: 20px;
   display: block;
   text-align: center;
   line-height: 3rem;
@@ -132,7 +134,7 @@ header {
 }
 /* change color when hovered over nav bar*/
 .nav-links a:hover {
-  color: #08ffd8; /* color of font when hovered over*/
+  color: #ff7b00; /* color of font when hovered over*/
 }
 .nav-links a::before {
   content: "";
@@ -159,7 +161,7 @@ header {
   color: #909096;
 }
 .social-icons li a:hover {
-  color: #08ffd8; /* color of icons when hovered over*/
+  color: #ff7b00; /* color of icons when hovered over*/
 }
 
 /* Style for the body text section */
@@ -199,7 +201,7 @@ header {
   letter-spacing: 3px;
   position: relative;
   text-align: center;
-  color: #08fdd8;
+  color: #ff7b00;
 }
 
 .contact-button div {
@@ -217,7 +219,7 @@ header {
   left: -5px;
   top: 0;
   transition: all 0.3s ease-in-out;
-  background-color: #08fdd8;
+  background-color: #ff7b00;
   transform: skewX(-19deg);
 }
 
@@ -230,7 +232,7 @@ header {
   height: 100%;
   position: absolute;
   left: 0;
-  border: 1px solid #08fdd8;
+  border: 1px solid #ff7b00;
   box-sizing: border-box;
 }
 
@@ -288,31 +290,37 @@ header {
 @media screen and (min-width: 950px) {
   header {
     justify-content: flex-end;
+    align-items: flex-end;
   }
   .btns-container {
     display: none;
   }
+
   .aside {
-    width: 10%;
+    width: 12%;
     height: 100%;
   }
+  .aside-wrapper {
+    height: 80%;
+  }
   .logo-section {
-    min-height: 15vh;
+    min-height: 25vh;
   }
   .logo img {
-    width: 50px;
+    width: 120px;
     height: auto;
   }
   .social-icons {
     margin-bottom: 0;
+    text-align: center;
   }
   .social-icons li {
-    text-align: center;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
+  /* home section */
   #section-home {
-    padding-left: 13rem;
+    padding-left: 16rem;
   }
   .text-zone h1 {
     font-size: 6.3rem;
@@ -321,6 +329,7 @@ header {
   }
   .text-zone img {
     width: 50px;
+    height: 72px;
   }
   .text-zone .gray-text {
     font-size: 1rem;
