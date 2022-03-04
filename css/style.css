@@ -71,7 +71,13 @@ header {
   top: 0;
   left: 0;
   overflow: hidden;
+  background-color: #191919;
   z-index: 1;
+}
+
+.show-nav {
+  height: 100%;
+  overflow: visible;
 }
 
 .aside-wrapper {
@@ -154,4 +160,177 @@ header {
 }
 .social-icons li a:hover {
   color: #08ffd8; /* color of icons when hovered over*/
+}
+
+/* Style for the body text section */
+
+#section-home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+.text-zone h1 {
+  font-size: 3.2rem;
+  line-height: 50px;
+  letter-spacing: -3px;
+}
+/* image in h1 size*/
+.text-zone img {
+  width: 30px;
+  height: auto;
+}
+.text-zone .gray-text {
+  margin-top: 30px;
+  color: #a2a2a3;
+  letter-spacing: 3px;
+  font-size: 14px;
+  position: relative;
+}
+
+.contact-button {
+  margin-top: 50px;
+  text-decoration: none;
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  letter-spacing: 3px;
+  position: relative;
+  text-align: center;
+  color: #08fdd8;
+}
+
+.contact-button div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-button span.bg {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: -5px;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  background-color: #08fdd8;
+  transform: skewX(-19deg);
+}
+
+.contact-button:hover span.bg {
+  width: 110%;
+}
+
+.contact-button span.base {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border: 1px solid #08fdd8;
+  box-sizing: border-box;
+}
+
+.contact-button span.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.contact-button:hover span.text {
+  color: #1d1d1d;
+}
+
+/* Scroll animation image*/
+.scroll-down {
+  position: absolute;
+  right: -20px;
+  bottom: 3.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotate(90deg);
+  display: block;
+  font-size: 14px;
+}
+
+.scroll-down--left {
+  left: -30px;
+  right: auto;
+}
+
+.scroll-down span {
+  display: inline-block;
+  animation: scroll 0.5s linear infinite alternate-reverse;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-7px);
+  }
+  100% {
+    transform: translateX(7px);
+  }
+}
+
+.scroll-down .fas {
+  transform: rotate(270deg);
+  margin-left: 10px;
+}
+
+/* content bar desing*/
+
+@media screen and (min-width: 950px) {
+  header {
+    justify-content: flex-end;
+  }
+  .btns-container {
+    display: none;
+  }
+  .aside {
+    width: 10%;
+    height: 100%;
+  }
+  .logo-section {
+    min-height: 15vh;
+  }
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+  .social-icons {
+    margin-bottom: 0;
+  }
+  .social-icons li {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  #section-home {
+    padding-left: 13rem;
+  }
+  .text-zone h1 {
+    font-size: 6.3rem;
+    line-height: 85px;
+    letter-spacing: -6px;
+  }
+  .text-zone img {
+    width: 50px;
+  }
+  .text-zone .gray-text {
+    font-size: 1rem;
+  }
+  .scroll-down {
+    right: -30px;
+    bottom: 3.3rem;
+  }
+  .scroll-down--left {
+    left: 110px;
+    right: auto;
+  }
 }
