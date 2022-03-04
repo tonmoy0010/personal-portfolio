@@ -49,7 +49,7 @@ header {
 }
 #on {
   display: none;
-  color: #ff7b00; /* color of icon */
+  color: #7c0000; /* color of icon */
 }
 
 .btns-container .fas {
@@ -134,7 +134,7 @@ header {
 }
 /* change color when hovered over nav bar*/
 .nav-links a:hover {
-  color: #ff7b00; /* color of font when hovered over*/
+  color: #7c0000; /* color of font when hovered over*/
 }
 .nav-links a::before {
   content: "";
@@ -161,7 +161,7 @@ header {
   color: #909096;
 }
 .social-icons li a:hover {
-  color: #ff7b00; /* color of icons when hovered over*/
+  color: #7c0000; /* color of icons when hovered over*/
 }
 
 /* Style for the body text section */
@@ -201,7 +201,7 @@ header {
   letter-spacing: 3px;
   position: relative;
   text-align: center;
-  color: #ff7b00;
+  color: #7c0000;
 }
 
 .contact-button div {
@@ -219,7 +219,7 @@ header {
   left: -5px;
   top: 0;
   transition: all 0.3s ease-in-out;
-  background-color: #ff7b00;
+  background-color: #7c0000;
   transform: skewX(-19deg);
 }
 
@@ -232,7 +232,7 @@ header {
   height: 100%;
   position: absolute;
   left: 0;
-  border: 1px solid #ff7b00;
+  border: 1px solid #7c0000;
   box-sizing: border-box;
 }
 
